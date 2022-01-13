@@ -27,8 +27,14 @@ public class EmployeePart extends AppCompatActivity {
     }
 
     public void Manage_workouts(View view) {
+        Intent intent  = new Intent(this, Workout.class);
+
+        startActivity(intent);
     }
 
     public void Manage_nutritionP(View view) {
+        Intent intent  = new Intent(this, Nutrition.class);
+
+        startActivity(intent);
     }
 }

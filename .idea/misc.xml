@@ -3,24 +3,36 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/_member_ship_chooser.xml" value="0.19972826086956522" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/_nutritios_chooser.xml" value="0.25" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/_workout_member.xml" value="0.19972826086956522" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_add_book.xml" value="0.12771739130434784" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_add_offer.xml" value="0.33" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_addmempers.xml" value="0.33" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_addworkoutschadual.xml" value="0.2" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_employee_part.xml" value="0.22" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_main2.xml" value="0.13903985507246377" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_members_details.xml" value="0.15579710144927536" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_nutritiondetails.xml" value="0.17" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_recyview.xml" value="0.14492753623188406" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_update_book.xml" value="0.2" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_update_memberinfo.xml" value="0.13697916666666668" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_update_offers.xml" value="0.25" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_updateworkouts_s.xml" value="0.2" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_workout.xml" value="0.2" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/activity_workouts.xml" value="0.13360507246376813" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/add_members.xml" value="0.13903985507246377" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/addmembers.xml" value="0.13903985507246377" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/cardimage.xml" value="0.14492753623188406" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/main.xml" value="0.22" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/members_page.xml" value="0.21" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/membersdetails.xml" value="0.25" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/ncard.xml" value="0.18" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/nutrition.xml" value="0.16" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/recyclarview.xml" value="0.21" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/update_members_info.xml" value="0.25" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/worjoutcard.xml" value="0.22" />
       </map>
     </option>
   </component>

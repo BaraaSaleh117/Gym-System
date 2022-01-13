@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnget_Click(View view) {
-        EditText edtCat = findViewById(R.id.edtCat);
+       EditText edtCat = findViewById(R.id.edtCat);
         ListView lst = findViewById(R.id.lstBooks);
         String url = "http://10.0.2.2/Gym/getmembers.php";
 

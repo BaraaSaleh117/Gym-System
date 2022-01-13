@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Workout_member">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="205dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="202dp"
+        android:text="weekly exercises :"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="278dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="406dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sq" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="403dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="5dp"
+        android:text="We have many weekly training programs Choose a program that suits you"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="398dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="11dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="372dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#03A9F4"
+        android:onClick="button4"
+        android:text="continue"
+        android:textColorHighlight="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

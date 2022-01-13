@@ -8,13 +8,31 @@ public class Membership {
 
     public Membership() {
     }
+    public Membership(String mname, String mlength, String price) {
 
-    public Membership( String mname, String mlength, String price) {
 
-        Mname = mname;
         Mlength = mlength;
         Price = price;
     }
+
+    public Membership( String mname) {
+
+        Mname = mname;
+    }
+
+    public Membership( String mlength, boolean flag) {
+
+
+        Mlength = mlength;
+
+    }
+    public Membership(  boolean flag ,String price) {
+
+
+        Price = price;
+
+    }
+
 
     public int getId() {
         return id;

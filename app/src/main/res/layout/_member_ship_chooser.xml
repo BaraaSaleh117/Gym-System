@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="._MemberShipChooser">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        app:srcCompat="@drawable/mem" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Our memberships :"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#03A9F4"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="286dp"
+        android:layout_height="57dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:text="Duration :"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#03A9F4"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="519dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:text="the Price:"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#03A9F4"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="519dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:onClick="button4"
+        android:text="continue"
+        android:textColorHighlight="#03A9F4"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="677dp" />
+
+</LinearLayout>
+
+

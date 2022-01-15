@@ -3,6 +3,7 @@ package com.example.gym_project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -35,6 +36,10 @@ public class Workout_member extends AppCompatActivity {
     private RequestQueue queue;
     TextView textView;
     JSONObject obj=null;
+    public static final String SHARD_PREFS = "shardPrefss";
+    public static final String TEXTT = "textt";
+    public static final String SWITCH1 = "switch1";
+    private String text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,9 +135,19 @@ public class Workout_member extends AppCompatActivity {
         t1.start();
 
     }
+    public void saveData() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARD_PREFS, MODE_PRIVATE);
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putString(TEXTT ,textView.getText().toString());
+        editor.apply();
+
+        Toast.makeText(this, "DATA SAVED",Toast.LENGTH_SHORT).show();
+
+    }
 
 
     public void button4(View view) {
+        saveData();
         Intent intent = new Intent(Workout_member.this,_Nutritios_chooser.class);
         startActivity(intent);
 

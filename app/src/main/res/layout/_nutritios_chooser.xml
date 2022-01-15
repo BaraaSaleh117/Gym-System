@@ -38,6 +38,23 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <TextView
+        android:id="@+id/textView20"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="43dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        android:layout_width="wrap_content"/>
+
+    <TextView
         android:id="@+id/textView11"
         android:layout_width="401dp"
         android:layout_height="24dp"
@@ -81,7 +98,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="23dp"
         android:layout_marginBottom="58dp"
-        android:backgroundTint="#03A9F4"
+        android:backgroundTint="#0C1317"
         android:onClick="button4"
         android:text="continue"
         android:textColorHighlight="#03A9F4"

@@ -3,6 +3,7 @@ package com.example.gym_project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -37,6 +38,10 @@ public class _MemberShipChooser extends AppCompatActivity {
     private RequestQueue queue;
     TextView textView ,textView2;
     JSONObject obj = null;
+    public static final String SHARD = "shardPrefs";
+    public static final String TEXT = "text";
+    private String text;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +52,7 @@ public class _MemberShipChooser extends AppCompatActivity {
         textView2 = (TextView) findViewById(R.id.textView12);
         queue = Volley.newRequestQueue(this);
         loadItems();
+
 
     }
 
@@ -108,6 +114,7 @@ public class _MemberShipChooser extends AppCompatActivity {
                                         } else {
                                             textView2.setText(Pricee.get(position));
                                             textView.setText(weekscagual.get(position));
+
                                         }
 
 
@@ -141,9 +148,19 @@ public class _MemberShipChooser extends AppCompatActivity {
         t1.start();
 
     }
+    public void saveData() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARD, MODE_PRIVATE);
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putString(TEXT ,textView.getText().toString());
+        editor.apply();
+
+        Toast.makeText(this, textView.getText().toString(),Toast.LENGTH_SHORT).show();
+
+    }
 
 
     public void button4(View view) {
+        saveData();
  Intent intent = new Intent(_MemberShipChooser.this,Workout_member.class);
  startActivity(intent);
     }

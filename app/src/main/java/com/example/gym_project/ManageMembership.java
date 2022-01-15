@@ -46,52 +46,59 @@ public class ManageMembership extends AppCompatActivity {
 
     }
     private void loadItems() {
-
-
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, BASE_URL,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-
-
-                        try {
-
-                            JSONArray array = new JSONArray(response);
-                            for (int i = 0; i<array.length(); i++){
-
-                                JSONObject object = array.getJSONObject(i);
-
-                                String Mname = object.getString("Mname");
-                                String Mlength = object.getString("Mlength");
-                                String Price = object.getString("Price");
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                StringRequest stringRequest = new StringRequest(Request.Method.GET, BASE_URL,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
 
 
 
-                                Membership membership = new Membership(Mname,Mlength,Price);
-                                items.add(membership);
+                                try {
+
+                                    JSONArray array = new JSONArray(response);
+                                    for (int i = 0; i<array.length(); i++){
+
+                                        JSONObject object = array.getJSONObject(i);
+
+                                        String Mname = object.getString("Mname");
+                                        String Mlength = object.getString("Mlength");
+                                        String Price = object.getString("Price");
+
+
+
+                                        Membership membership = new Membership(Mname,Mlength,Price);
+                                        items.add(membership);
+                                    }
+
+                                }catch (Exception e){
+
+                                }
+
+                                MembershipAdapter adapter = new MembershipAdapter(ManageMembership.this,
+                                        items);
+                                recycler.setAdapter(adapter);
+
                             }
+                        }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
 
-                        }catch (Exception e){
 
-                        }
-
-                        MembershipAdapter adapter = new MembershipAdapter(ManageMembership.this,
-                                items);
-                        recycler.setAdapter(adapter);
+                        Toast.makeText(ManageMembership.this, error.toString(),Toast.LENGTH_LONG).show();
 
                     }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
+                });
 
-
-                Toast.makeText(ManageMembership.this, error.toString(),Toast.LENGTH_LONG).show();
-
+                Volley.newRequestQueue(ManageMembership.this).add(stringRequest);
             }
         });
+        t1.start();
 
-        Volley.newRequestQueue(ManageMembership.this).add(stringRequest);
+
+
 
 
 

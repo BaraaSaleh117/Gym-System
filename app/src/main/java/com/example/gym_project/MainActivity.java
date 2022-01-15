@@ -93,57 +93,70 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnget_Click(View view) {
-       EditText edtCat = findViewById(R.id.edtCat);
-        ListView lst = findViewById(R.id.lstBooks);
-        String url = "http://10.0.2.2/Gym/getmembers.php";
 
-        JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url,
-                null, new Response.Listener<JSONArray>() {
+        Thread t1 = new Thread(new Runnable() {
             @Override
-            public void onResponse(JSONArray response) {
-                ArrayList<String> member = new ArrayList<>();
-                for (int i = 0; i < response.length(); i++) {
-                    try {
-                         obj = response.getJSONObject(i);
-                         Name =obj.getString("name");
-                         Phone =obj.getString("phone");
-                         Dj =obj.getString("DateOfJoining");
-                         De =obj.getString("ExpirationDate");
-                        member.add(Name);
-                    }catch(JSONException exception){
-                        Log.d("Error", exception.toString());
-                    }
-                }
-                String[] arr = new String[member.size()];
-                arr = member.toArray(arr);
-                ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                        MainActivity.this, android.R.layout.simple_list_item_1,
-                        arr);
-                lst.setAdapter(adapter);
-                lst.setClickable(true);
-                lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Intent i = new Intent(MainActivity.this,membersDetails.class);
-                        i.putExtra("name",Name);
-                        i.putExtra("phone",Phone);
-                        i.putExtra("DateOfJoining",Dj);
-                        i.putExtra("ExpirationDate",De);
-                        startActivity(i);
+            public void run() {
+                EditText edtCat = findViewById(R.id.edtCat);
+                ListView lst = findViewById(R.id.lstBooks);
+                String url = "http://10.0.2.2/Gym/getmembers.php";
 
+                JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url,
+                        null, new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        ArrayList<String> member = new ArrayList<>();
+                        for (int i = 0; i < response.length(); i++) {
+                            try {
+                                obj = response.getJSONObject(i);
+                                Name =obj.getString("name");
+                                Phone =obj.getString("phone");
+                                Dj =obj.getString("DateOfJoining");
+                                De =obj.getString("ExpirationDate");
+                                member.add(Name);
+                            }catch(JSONException exception){
+                                Log.d("Error", exception.toString());
+                            }
+                        }
+                        String[] arr = new String[member.size()];
+                        arr = member.toArray(arr);
+                        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                                MainActivity.this, android.R.layout.simple_list_item_1,
+                                arr);
+                        lst.setAdapter(adapter);
+                        lst.setClickable(true);
+                        lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                Intent i = new Intent(MainActivity.this,membersDetails.class);
+                                i.putExtra("name",Name);
+                                i.putExtra("phone",Phone);
+                                i.putExtra("DateOfJoining",Dj);
+                                i.putExtra("ExpirationDate",De);
+                                startActivity(i);
+
+                            }
+                        });
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                        Toast.makeText(MainActivity.this, error.toString(),
+                                Toast.LENGTH_SHORT).show();
                     }
                 });
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
 
-                Toast.makeText(MainActivity.this, error.toString(),
-                        Toast.LENGTH_SHORT).show();
+                queue.add(request);
+
+
             }
+
+
         });
+        t1.start();
 
-        queue.add(request);
+
 
     }
 

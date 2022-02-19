@@ -45,6 +45,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
     public void btnSearch_Click(View view) {
         EditText edtCat = findViewById(R.id.edtCat);
         ListView lst = findViewById(R.id.lstBooks);

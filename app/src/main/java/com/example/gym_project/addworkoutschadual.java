@@ -31,6 +31,20 @@ public class addworkoutschadual extends AppCompatActivity {
         edttext = findViewById(R.id.edtCategoryu);
 
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 
     public void btnAdd_Click(View view) {
         String name = edtname.getText().toString();

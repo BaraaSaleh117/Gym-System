@@ -13,6 +13,20 @@ public class EmployeePart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_part);
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 
     public void Manage_Members(View view) {
         Intent intent  = new Intent(this, MainActivity.class);

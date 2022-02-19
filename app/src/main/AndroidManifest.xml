@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gym_Project"
         android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".WebActivity"
+            android:exported="false" />
         <activity
             android:name="._MemberShipChooser"
             android:exported="true" />

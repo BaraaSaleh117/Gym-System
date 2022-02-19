@@ -92,7 +92,7 @@
         android:layout_marginBottom="6dp"
         android:backgroundTint="#091317"
         android:onClick="button4"
-        android:text="continue"
+        android:text="@string/con"
         android:textColorHighlight="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

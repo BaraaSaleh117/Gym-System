@@ -45,6 +45,20 @@ public class ManageMembership extends AppCompatActivity {
         loadItems();
 
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
     private void loadItems() {
         Thread t1 = new Thread(new Runnable() {
             @Override

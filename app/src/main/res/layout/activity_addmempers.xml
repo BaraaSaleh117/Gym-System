@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
-        android:text="Add New Member"
+        android:text="@string/addNew"
         android:textAlignment="center"
         android:textColor="#FF9800"
         android:textSize="20sp"
@@ -65,5 +65,5 @@
         android:insetTop="20dp"
         android:insetRight="10dp"
         android:onClick="btnAdd_Click"
-        android:text="Add" />
+        android:text="@string/addadd" />
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -33,6 +33,20 @@ public class UpdateworkoutsS extends AppCompatActivity {
         edtPages3 = findViewById(R.id.edtPagesu3);
 
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 
     public void btnUp_Click(View view) {
         String Mname = edtTitle.getText().toString();

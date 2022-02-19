@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="103dp"
         app:srcCompat="@drawable/memb"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
@@ -20,7 +20,7 @@
         android:layout_width="150dp"
         android:layout_height="43dp"
         android:fontFamily="cursive"
-        android:text="MemberShip"
+        android:text="@string/memships"
         android:textColor="#2196F3"
         android:textSize="24sp"
         tools:fontFamily="serif"
@@ -44,7 +44,7 @@
         android:layout_width="254dp"
         android:layout_height="38dp"
         android:fontFamily="cursive"
-        android:text="your weekly program"
+        android:text="@string/weekly"
         android:textColor="#2196F3"
         android:textSize="24sp"
         tools:fontFamily="serif"
@@ -68,7 +68,7 @@
         android:layout_width="207dp"
         android:layout_height="43dp"
         android:fontFamily="cursive"
-        android:text="your food program"
+        android:text="@string/food"
         android:textColor="#2196F3"
         android:textSize="24sp"
         tools:fontFamily="serif"
@@ -86,5 +86,23 @@
         tools:fontFamily="serif-monospace"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="599dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="372dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#091317"
+        android:onClick="button4"
+        android:text="continue"
+        android:textColorHighlight="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 </LinearLayout>

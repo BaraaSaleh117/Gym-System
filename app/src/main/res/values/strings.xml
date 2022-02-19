@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Gym_Project</string>
+    <string name="employee">Employee</string>
+    <string name="member">Member</string>
+    <string name="memberships">Our memberships :</string>
+    <string name="price">Price :</string>
+    <string name="memships"> MemberShips </string>
+    <string name="weekly"> your weekly program </string>
+    <string name="food"> your food program </string>
+    <string name="nutrition">We have many suggested nutrition programs </string>
+    <string name="suits">  Choose what suits you </string>
+    <string name="con"> Continue</string>
+    <string name="add"> Add New Offer</string>
+    <string name="addadd"> Add</string>
+    <string name="addNew"> Add New Member</string>
+    <string name="manage">    Manage members informations</string>
+    <string name="mempage">    Members Page</string>
+
+
+
+
+
+
+
 </resources>

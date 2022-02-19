@@ -2,8 +2,10 @@ package com.example.gym_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,5 +36,10 @@ public class _Members_Profile extends AppCompatActivity {
         textView.setText(text);
         textVieww.setText(text2);
         textViewn.setText(text3);
+    }
+
+    public void button4(View view) {
+        Intent intent = new Intent(_Members_Profile.this,WebActivity.class);
+        startActivity(intent);
     }
 }

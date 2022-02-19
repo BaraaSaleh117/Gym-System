@@ -31,6 +31,20 @@ public class AddOffer extends AppCompatActivity {
         edtprice = findViewById(R.id.edtPagesu);
 
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 
     public void btnAdd_Click(View view) {
         String Mname = edtname.getText().toString();

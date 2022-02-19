@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/_gym.xml" value="0.19972826086956522" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/_gym.xml" value="0.1" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/_member_ship_chooser.xml" value="0.19972826086956522" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/_members_profile.xml" value="0.19972826086956522" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/_nutritios_chooser.xml" value="0.25" />
@@ -34,6 +34,7 @@
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/nutrition.xml" value="0.16" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/recyclarview.xml" value="0.21" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/update_members_info.xml" value="0.25" />
+        <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/web.xml" value="0.20199275362318841" />
         <entry key="..\:/xampp/htdocs/Gym/app/src/main/res/layout/worjoutcard.xml" value="0.22" />
       </map>
     </option>

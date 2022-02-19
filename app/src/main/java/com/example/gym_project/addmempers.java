@@ -32,6 +32,20 @@ public class addmempers extends AppCompatActivity {
         edtDj = findViewById(R.id.edtPagesu);
         edtEd = findViewById(R.id.edtPagesu2);
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 
     public void btnAdd_Click(View view) {
         String name = edtname.getText().toString();

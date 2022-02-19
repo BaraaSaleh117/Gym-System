@@ -47,5 +47,5 @@
         android:insetTop="20dp"
         android:insetRight="10dp"
         android:onClick="btnAdd_Click"
-        android:text="Add" />
+        android:text="@string/addadd" />
 </androidx.appcompat.widget.LinearLayoutCompat>

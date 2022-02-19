@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:padding="8dp"
-        android:text="Members Page"
+        android:text="@string/mempage"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FF9800"

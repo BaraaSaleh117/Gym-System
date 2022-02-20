@@ -12,6 +12,23 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
     </style>
+    <style name="gym" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="colorPrimary">@color/Blue</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <style name="gymbtn" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="colorPrimary">@color/lightBlack</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
 
 </resources>

@@ -8,11 +8,34 @@
     android:orientation="vertical"
     >
 
+    <Button
+        android:id="@+id/port_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/DarkBlue"
+        android:onClick="Portrait"
+        android:text="Portrait Now"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <Button
+        android:id="@+id/land_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/DarkBlue"
+        android:onClick="Landscape"
+        android:text="LandScape Now"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="match_parent"
-        android:layout_height="486dp"
+        android:layout_height="145dp"
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="26dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
@@ -23,7 +46,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="98dp"
+        android:layout_height="89dp"
         android:orientation="horizontal"
         android:paddingLeft="15dp">
 
@@ -33,12 +56,10 @@
             android:layout_width="185dp"
             android:layout_height="59dp"
             android:layout_marginTop="26dp"
-            android:backgroundTint="@color/DarkBlue"
+            android:theme="@style/gymbtn"
+            android:onClick="employee"
             android:text="@string/employee"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11"
-            android:onClick="employee"/>
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
         <Button
             android:id="@+id/button5"
@@ -47,14 +68,12 @@
             android:layout_marginStart="37dp"
             android:layout_marginTop="26dp"
             android:layout_marginEnd="48dp"
-            android:backgroundTint="#09161C"
+            android:theme="@style/gymbtn"
+            android:onClick="member"
             android:text="@string/member"
-            android:textSize="16dp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11"
-            android:onClick="member"/>
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
     </LinearLayout>
 
